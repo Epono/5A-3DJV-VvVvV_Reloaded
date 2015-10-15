@@ -1,0 +1,5 @@
+# UDK4 ignores
+
+DerivedDataCache/
+Intermediate/
+Saved/
