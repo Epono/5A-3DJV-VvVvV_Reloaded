@@ -9,9 +9,12 @@
 %%% - use ``tog'' for technical papers accepted to the TOG journal and
 %%%   for presentation at the SIGGRAPH or SIGGRAPH Asia conference.
 %%% - use ``conference'' for final content accepted to a sponsored event
-%%%   (hint: If you don't know, you should use ``conference.'')
+%%%   (hint: If you don't know, you should use ``conference.'') 
 
 \documentclass[conference]{acmsiggraph}
+
+\usepackage[utf8]{inputenc}  
+\usepackage[T1]{fontenc}  
 
 %%% Make the ``BibTeX'' word pretty...
 
@@ -21,11 +24,11 @@
 \title{Real Time NeuroEvolution of Augmenting Topologies in video games}
 
 %%% TODO: Mettre les adresses de l'école
-\author{Guillaume Ambrois\thanks{e-mail:guillaume.ambrois@gmail.com}, Sébastien Gaulier\thanks{e-mail:sebastien.gaulier@gmail.com}\\ESGI, Paris}
-\pdfauthor{Guillaume Ambrois & Sébastien Gaulier}
+%%\author{Guillaume Ambrois\thanks{e-mail:guillaume.ambrois@gmail.com}, Sébastien %%Gaulier\thanks{e-mail:sebastien.gaulier@gmail.com}\\ESGI, Paris}
+%%\pdfauthor{Guillaume Ambrois & Sébastien Gaulier}
 
-%%% TODO: Ajouter des mots clés
-\keywords{video game, artificial intelligence, machine learning, NeuroEvolution of Augmenting Topologies}
+\author{Anonyme}
+\pdfauthor{Anonyme}
 
 \begin{document}
 
@@ -40,84 +43,31 @@
 
 \maketitle
 
-\begin{abstract}
-
-Artificial Intelligence is one of the fields that advances the most in video games, but there is still a tremendous work to be done.
-
-In this poster, we will talk about how we can achieve real time Machine Learning, using rtNEAT.
-
-\end{abstract}
-
-\keywordlist
-
-%% Required for all content. 
-
-\copyrightspace
-
 \section{Introduction}
 
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
+Artificial Intelligence is one of the fields that advances the most in video games, but there is still a tremendous work to be done. AI is still only scripted behaviors : we tell the agent what to do depending on the situation.
+
+NeuroEvolution of Augmenting Topologies (NEAT) allows us to weight parameters and structures of networks, so we can tune our agents' AI by rewarding them for a good behavior (like shooting an enemy) and punishing them for a bad behavior (like taking cover from enemy shots).
+
+In this poster, we will talk about how we can achieve real time NEAT, using rtNEAT, an open source and free to use library originally written by Kenneth Stanley from the University of Texas.
+
+In our (multiplayer) game, there is two types of units :
+\begin{itemize}
+	\item Burglars that try to steal money from the bank,
+	\item Night watchmen, that try to catch burglars before they leave the map.
+\end{itemize}
+Some units are controlled by players, while others are controlled by the computer. Each game, IA learns from the player, learning what to do and what not to do, whats works and what doesn't.
 
 \section{Using rtNEAT}
 
-La bibliothèque rtNEAT est une implémentation temps réel en C++ de la méthode de NeuroEvolution of Augmenting Topologies.
+We use the UE4 as an engine to build our game. rtNEAT comes as source files, so we just had to include one header and we were able to start using the library.
 
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida arcu sit amet mi molestie, et aliquet augue hendrerit. Curabitur eget luctus risus. Nulla gravida, leo eget porttitor ullamcorper, elit augue finibus mi, eu mollis nunc eros id mi. Pellentesque vel blandit ligula. Etiam augue leo, mattis eu ultricies sed, tempor vitae mauris. Etiam sit amet lectus scelerisque, vehicula ipsum ac, scelerisque tellus. Cras sit amet faucibus nulla. Vestibulum et dolor non felis tristique condimentum. Morbi non erat at ex viverra faucibus. Proin sed dapibus mi. Ut interdum mi sit amet lobortis congue. Nulla nibh massa, sollicitudin nec sodales in, viverra nec risus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida arcu sit amet mi molestie, et aliquet augue hendrerit. Curabitur eget luctus risus. Nulla gravida, leo eget porttitor ullamcorper, elit augue finibus mi, eu mollis nunc eros id mi. Pellentesque vel blandit ligula. Etiam augue leo, mattis eu ultricies sed, tempor vitae mauris. Etiam sit amet lectus scelerisque, vehicula ipsum ac, scelerisque tellus. Cras sit amet faucibus nulla. Vestibulum et dolor non felis tristique condimentum. Morbi non erat at ex viverra faucibus. Proin sed dapibus mi. Ut interdum mi sit amet lobortis congue. Nulla nibh massa, sollicitudin nec sodales in, viverra nec risus.
 
-\section{Our approach}
+\section{Our design}
 
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
-Plein de texte pour pousser les références.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida arcu sit amet mi molestie, et aliquet augue hendrerit. Curabitur eget luctus risus. Nulla gravida, leo eget porttitor ullamcorper, elit augue finibus mi, eu mollis nunc eros id mi. Pellentesque vel blandit ligula. Etiam augue leo, mattis eu ultricies sed, tempor vitae mauris. Etiam sit amet lectus scelerisque, vehicula ipsum ac, scelerisque tellus. Cras sit amet faucibus nulla. Vestibulum et dolor non felis tristique condimentum. Morbi non erat at ex viverra faucibus. Proin sed dapibus mi.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur gravida arcu sit amet mi molestie, et aliquet augue hendrerit. Curabitur eget luctus risus. Nulla gravida, leo eget porttitor ullamcorper, elit augue finibus mi, eu mollis nunc eros id mi. Pellentesque vel blandit ligula. Etiam augue leo, mattis eu ultricies sed, tempor vitae mauris. Etiam sit amet lectus scelerisque, vehicula ipsum ac, scelerisque tellus. Cras sit amet faucibus nulla. Vestibulum et dolor non felis tristique condimentum. Morbi non erat at ex viverra faucibus. Proin sed dapibus mi. Ut interdum mi sit amet lobortis congue. Nulla nibh massa, sollicitudin nec sodales in, viverra nec risus.
 
 \bibliographystyle{acmsiggraph}
 \nocite{*}
