@@ -38,37 +38,47 @@
 \section{Introduction}
 
 Over the past years, procedurally generated content has become increasingly popular, especially in video games.
+But the seed (the data used as input for the algorithm) for those procedural algorithms is almost always (\textbf{EXAMPLES ?}) just a number.
 
-\section{Our design}
+Meanwhile, computer vision algorithms keep getting faster, stronger and smarter.
 
-In our project, we used Unreal Engine 4 as game engine, and OpenCV 3.1 to process the video from which we want to extract data.
+And so we decided to try and mix the two together.
+
+In this poster, we will explain the design we had in mind, and how we implemented it.
+
+\section{Our approach}
 
 We first had to decide what we wanted to look for in the video.
 For this, we considered : 
 \begin{itemize}
 	\item Moving elements,
 	\item Changing colors,
-	\item ???,
+	\item \textbf{OTHER STUFF},
 \end{itemize}
 
-We decided to focus on spotting elements, and their movements, which is the thing the human eye is the best at spotting.
+We decided to focus on detecting elements, and their movements, which is the thing the human eye is the best at doing.
 
 Then, we had to decide what type of content we wanted to procedurally generate using those data.
-
 The game we developed as a proof of concept was a multiplayer arcade game in which you wandered around a maze-ish arena, collecting treasures and battling against other players and IAs.
 
 The content we considered to procedurally generate were :
 \begin{itemize}
 	\item A level,
-	\item An IA behavior (?),
+	\item An IA behavior,
 	\item Player capacities,
 \end{itemize}
 
-\section{Technical approach}
+We went along with a procedurally generated level. Even if it's not really original, it's with this that we will have the most noticeable results.
 
-Firstly, for the sake of simplicity, we used short videos (2 to 3 minutes), with a static point of view.
+\section{Technical implementation}
+
+In our project, we used Unreal Engine 4 as game engine, and OpenCV 3.1 to process the video from which we want to extract data.
+
+Firstly, for the sake of simplicity, we used short videos (2 to 3 minutes), with a static point of view to get rid of the complexity of keeping track of the camera's movement.
 
 We process each frame of the video, trying to follow the motion of the elements we're tracking.
+
+\textbf{NOT IMPLEMENTED YET.}
 
 \bibliographystyle{acmsiggraph}
 \nocite{*}

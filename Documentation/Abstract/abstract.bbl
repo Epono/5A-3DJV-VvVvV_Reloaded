@@ -1,4 +1,12 @@
-\begin{thebibliography}{\protect\citename{Shaker et~al\mbox{.} }2015}
+\begin{thebibliography}{\protect\citename{Coifman et~al\mbox{.} }1998}
+
+\bibitem[\protect\citename{Coifman et~al\mbox{.} }1998]{coifman1998real}
+{\sc Coifman, B., Beymer, D., McLauchlan, P., and Malik, J.}
+\newblock 1998.
+\newblock A real-time computer vision system for vehicle tracking and traffic
+  surveillance.
+\newblock {\em Transportation Research Part C: Emerging Technologies 6}, 4,
+  271--288.
 
 \bibitem[\protect\citename{Shaker et~al\mbox{.} }2015]{shaker2015procedural}
 {\sc Shaker, N., Togelius, J., and Nelson, M.~J.}
