@@ -1,8 +1,14 @@
 # UDK4 ignores
 
+Binaries/
+Build/
 DerivedDataCache/
 Intermediate/
 Saved/
+ThirdParty/
 
 *.suo
 *.sdf
+*.VC.opendb
+*.exe
+*.pdb
