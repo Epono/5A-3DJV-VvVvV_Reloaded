@@ -140,10 +140,11 @@
   % Title
   {\bf\textsc{Procedurally Generating Content from Video Stream}\vspace{0.5em}}
   % Authors
-  {\textsc{\{ Sebastien.Gaulier and Guillaume.Ambrois \}@gmail.com}}
+  %{\textsc{\{ Sebastien.Gaulier and Guillaume.Ambrois \}@gmail.com}}
+  {\textsc{\ Anonym}}
   % University logo
   {% The makebox allows the title to flow into the logo, this is a hack because of the L shaped logo.
-	\includegraphics[height=5.0em]{images/logo}
+	%\includegraphics[height=5.0em]{images/logo}
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -165,7 +166,7 @@
   \headerbox{Introduction}{name=introduction,column=0,row=0}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	 Over the past years, procedurally generated content has become increasingly popular, especially in video games.
-	 But the seed (the data used as input for the algorithm) for those procedural algorithms is almost always (\textbf{EXAMPLES ?}) just a number.
+	 But the seed (the data used as input for the algorithm) for those procedural algorithms is almost always just a number.
  
 	 Meanwhile, computer vision algorithms keep getting faster, stronger and smarter.
  
@@ -175,9 +176,13 @@
  }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Challenge \& Objectives ?}{name=challenge_objectives,column=1,row=0,bottomaligned=introduction}{
+  \headerbox{Challenge \& Objectives}{name=challenge_objectives,column=1,row=0,bottomaligned=introduction}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	We wanted to allow the players to personnalize a bit their experience, by giving them a way to control, even only in a small way, the procedural generation of content.
+	 
+	The challenge was to find a way for our algorithm to procedurally generate an enjoyable and fun playable level, which the players would feel they have the control on, without giving them total control.
 	
+	Another challenge was to use OpenCV and Unreal Engine together.
   }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -209,14 +214,14 @@
     {\hfill{}458\hfill{}} 
   \end{tabular*}
       \begin{multicols}{2}
-      	Here you can see the video on the top row.
+      	Here you can see the input video on the top row ...
 
-		And the corresponding level on the bottom row.
+		... and the corresponding level on the bottom row.
       \end{multicols}
       \vspace{-0.6em}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{References}{name=references,column=0,above=bottom}{
+  \headerbox{References}{name=references,column=0,span=2,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \smaller
     \bibliographystyle{ieee}
@@ -235,22 +240,22 @@
    \vspace{0.3em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Improvements}{name=improvements,column=1,span=2,aligned=references,above=bottom}{
+  \headerbox{Improvements}{name=improvements,column=2,span=2,aligned=references,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   \begin{multicols}{2}
-    Some text. 
+    Our algorithm could use some optimization, and we plan to allow fine tuning in the future.
     
-    Some text.
+    We also want to add the possibility to analyze and use the sound in the video.
   \end{multicols}
    \vspace{0.3em}
   }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \headerbox{Source Code}{name=references,column=3,aligned=references,above=bottom}{
+ % \headerbox{Source Code}{name=references,column=3,aligned=references,above=bottom}{
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  The source code can be found at at \\
-  \url{https://github.com/Epono/5A-3DJV-VvVvV_Reloaded}
-   \vspace{0.3em}
-  }
+ % The source code can be found at at \\
+ % \url{https://github.com/Epono/5A-3DJV-VvVvV_Reloaded}
+ %  \vspace{0.3em}
+%  }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \headerbox{Limitations}{name=limitations,column=2,span=2,row=0,below=results,above=references}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
