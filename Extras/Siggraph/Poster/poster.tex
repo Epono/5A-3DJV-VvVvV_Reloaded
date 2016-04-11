@@ -280,7 +280,15 @@
   
   Firstly, for the sake of simplicity, we used short videos (2 to 3 minutes), with a static point of view to get rid of the complexity of keeping track of the camera's movement.
   
-  We process each frame of the video, trying to follow the motion of the elements we're tracking.
+  We process each frame of the video, trying to follow the motion of the elements we're tracking. To process these frames we're using contours with OpenCV.
+
+  First we need to have a binary image in which your objects should be white and the background should be black.
+  
+  The OpenCV function FindContours give us a list of potential contours of object we have to analyse in order to filter the shapes we want to draw in our scene.
+  
+  For that we use the OpenCV ApproxPoly function which return a polygon we have to check whether it's a triangle, a quadrilateral, etc.
+  
+  After processing all the shapes in the frame, we just create a room, in our game level, associated with the shapes retrieved with OpenCV.
   
   \textbf{NOT IMPLEMENTED YET.}
   
