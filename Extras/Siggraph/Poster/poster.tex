@@ -264,20 +264,16 @@
 \headerbox{Limitations}{name=limitations,column=2,span=2,below=results,above=references}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{multicols}{2}
-		\indent{}For now, our algorithm processes only very simple videos, like simple shapes on a white background, or videos with a fixed camera. This is because tracking elements with a moving camera is much harder than with a fixed camera, and we wanted to focus on refining our procedural algorithm, in order to produce fun levels for the players to play.
-		
+		\indent{}For now, our algorithm processes only very simple videos, like simple shapes on a white background, or videos with a fixed camera. This is because tracking elements with a moving camera is much harder than with a fixed camera, and we wanted to focus on refining our procedural algorithm, in order to produce fun levels for the players to play.	
   \\
   \\
   \indent
-  
   \\
   \\
   \indent
-  
   \\
   \\
-  \indent
-		   
+  \indent   
 		Another limitation is the fact that only one player processes the video, others can't participate in the procedural generaion of the level. One way around this issue would be to allow each player to procedurally generate a portion of the level, but this could result in the junctures between each portion being a little off.
 		
 		Currently, our algorithm doesn't take into account the audio in a video, since we focused on computer vision, but this is something we would really like to add in the next version of our project.	
@@ -293,7 +289,9 @@
   Firstly, for the sake of simplicity, we used short videos (2 to 3 minutes), with a static point of view to get rid of the complexity of keeping track of the camera's movement.
   
   We process each frame of the video, trying to follow the motion of the elements we're tracking. To process these frames we're using contours with OpenCV.
-
+  \\
+  \\
+  \indent  
   First we need to have a binary image in which your objects should be white and the background should be black.
   
   The OpenCV function FindContours give us a list of the potential object contours we have to analyse in order to filter the shapes we want to draw in our scene.
