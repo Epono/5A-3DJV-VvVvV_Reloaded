@@ -261,12 +261,14 @@
  %  \vspace{0.3em}
 %  }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\headerbox{Limitations}{name=limitations,column=2,span=2,row=0,below=results,above=references}{
+\headerbox{Limitations}{name=limitations,column=2,span=2,below=results,above=references}{
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     \begin{multicols}{2}
-		\indent{}An awful lot of text.
+		\indent{}For now, our algorithm processes only very simple videos, like simple shapes on a white background, or videos with a fixed camera. This is because tracking elements with a moving camera is much harder than with a fixed camera, and we wanted to focus on refining our procedural algorithm, in order to produce fun levels for the players to play.
 		
-		God damn that's a lot of text.
+		Another limitation is the fact that only one player processes the video, others can't participate in the procedural generaion of the level. One way around this issue would be to allow each player to procedurally generate a portion of the level, but this could result in the junctures between each portion being a little off.
+		
+		Currently, our algorithm doesn't take into account the audio in a video, since we focused on computer vision, but this is something we would really like to add in the next version of our project.	
 	\end{multicols}
    \vspace{0.0em}
   }
