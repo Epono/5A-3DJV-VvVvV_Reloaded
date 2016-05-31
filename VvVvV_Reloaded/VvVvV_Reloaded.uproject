@@ -2,15 +2,5 @@
 	"FileVersion": 3,
 	"EngineAssociation": "4.11",
 	"Category": "",
-	"Description": "",
-	"Modules": [
-		{
-			"Name": "VvVvV_Reloaded",
-			"Type": "Runtime",
-			"LoadingPhase": "Default",
-			"AdditionalDependencies": [
-				"Engine"
-			]
-		}
-	]
+	"Description": ""
 }
